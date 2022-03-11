@@ -27,6 +27,7 @@ class Display {
         this.imprimirValores();
     }
 
+    //tipo = al valor que le dan click en el HTML (boton.value)
     computar(tipo) {
         this.tipoOperacion !== 'igual' && this.calcular();
         this.tipoOperacion = tipo;
@@ -35,6 +36,7 @@ class Display {
         this.imprimirValores();
     }
 
+    //numero = al valor que le dan click en el HTML (boton.innerHTML)
     agregarNumero(numero) {
         if(numero === '.' && this.valorActual.includes('.')) return
         this.valorActual = this.valorActual.toString() + numero.toString();
